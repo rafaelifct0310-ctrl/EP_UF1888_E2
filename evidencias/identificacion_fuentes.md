@@ -1,7 +1,7 @@
 # Identificación tablas origen
 
 `res_partner`
-Aquí se almacenan los: clientes, proveedores, emporesas, personas.
+Aquí se almacenan los: clientes, proveedores, empresas, personas.
 
 `sale_order`
 Aquí se almacena la cabecera del pedido:
@@ -18,7 +18,7 @@ Aquí se almacena el detalle
 - cantidad
 - precio unitario
 - subtotal
-- pedido al que pertence
+- pedido al que pertenece
 
 ## 4. Productos
 Tablas/modelos : product_product y product_template
@@ -26,9 +26,9 @@ Uso: contiene la información de los productos comercializados.
 
 ## Relación entre tablas
 - sale_order.partner_id -> res_partner.id
-- sale_order_line.order.id -> sale_order.id
+- sale_order_line.order_id -> sale_order.id
 - sale_order_line.product_id -> product_product.id
-- product_product.product_tmpl.id -> product_template.id
+- product_product.product_tmpl_id -> product_template.id
 
 
 
